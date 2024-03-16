@@ -1,0 +1,88 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_bridge",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_adminAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_feeAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_taxFee",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "sentAmount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "bridgeAmount",
+				"type": "uint256"
+			}
+		],
+		"name": "CoinReceived",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_bridgeAmount",
+				"type": "uint256"
+			}
+		],
+		"name": "DepositCoin",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address payable",
+				"name": "_recipient",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "transfer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "receive"
+	}
+]
