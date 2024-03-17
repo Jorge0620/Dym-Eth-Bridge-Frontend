@@ -3,10 +3,10 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { defineComponent } from 'vue'
 import axios from 'axios';
-import NavBar from '@/components/NavBar.vue'
-import Nav from '@/components/Nav.vue'
+import NavBar from './components/NavBar.vue'
+import Nav from './components/Nav.vue'
 
-import Footer from '@/components/Footer.vue'
+import Footer from './components/Footer.vue'
 
 export default defineComponent({
   setup() {
