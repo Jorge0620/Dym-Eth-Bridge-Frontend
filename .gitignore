@@ -5,5 +5,3 @@ dist
 dist-ssr
 *.local
 .vscode
-.env
-*.env
